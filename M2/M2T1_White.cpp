@@ -20,7 +20,6 @@ int main ()
     double tax_percent = 0.08;
     double tax_amount = 0;
     double total = 0;
-
     // do calculations
 
     // print the receipt
