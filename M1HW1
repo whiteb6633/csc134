@@ -1,0 +1,36 @@
+/*
+// CSC 134
+// M1HW1
+// Brandon White
+// 01/29/24
+*/
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+	// Pick a movie
+    string name = " 28 Days Later,";
+    // The year the movie came out
+    int num_year = 2003;
+    // Use decimal point for box office gross
+    cout << fixed << setprecision(2);
+    double box_office_gross = 10.06;
+    
+    // Print the output
+	cout << "The movie," << name << " came out in the year " << num_year << ", and had a worldwide gross of about $" << box_office_gross << " million dollars." << endl;
+    cout << "" << endl;
+    cout << "\"Mmm...irradiated.\" Frank says while finding fresh apples in a pile of rotten food." << endl;
+    cout << "" << endl;
+    cout << "28 days later is about a group of survivors struggling to find safety amidst an zombie apocalypse." << endl;
+    cout << "" << endl;
+    cout << "Instead of the typical reanimated corpses rising from the dead to feast on the flesh of the living," << endl;
+    cout << "these \"zombies\" are created when a group of animal rights activists release an infected chimp from" << endl;
+    cout << "a lab, who in turn infects the local population which causes the disease to spread globally." << endl;
+    cout << "" << endl;
+    cout << "My favorite scene in the movie is when Jim, the storys protagonist, is told by the group he joins" << endl;
+    cout << "that the world as he knew it was over. I feel that emotions in this scene we're captured perfectly!" << endl;
+    return 0;
+}
