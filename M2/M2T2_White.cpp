@@ -28,7 +28,10 @@ int main()
     cout << "Welcome to our orchard. How many apples would you like? " << endl;
     cin >> apples;
     cout << fixed << setprecision(2);
+    cout << "How much does each apple cost?" << endl;
+    cin >> price_each;
     double total_price = apples * price_each;
+
 
     cout << "Each apple has a cost of $" << price_each << " each." << endl;
     cout << "Your total would be $" << total_price <<  ". Would you like to proceed with this purchase? " << endl;
@@ -42,7 +45,7 @@ int main()
     cout << "Thank you for shopping with us." << endl;
     cout << "------------------------------" << endl;
     cout << apples << " Apples" << "\t$" << total_price << endl;
-    cout << "Tax:" <<  "\t\t" << tax_amount << endl;
+    cout << "Tax:" <<  "\t\t$" << tax_amount << endl;
     cout << "------------------------------" << endl;
     cout << "Total:" << "\t\t$" << grand_total << endl;
       
