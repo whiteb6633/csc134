@@ -1,4 +1,4 @@
-// use as starter for any program
+// USE AS A STARTER FOR ANY PROGRAM
 // CSC 134
 // ASSIGNMENT
 // NAME
@@ -9,5 +9,12 @@ using namespace std;
 
 int main () 
 {
+    // Declare Variables
+
+    // Ask the questions 
+
+    // Calculate 
+
+    // Print the results
     return 0;
 }
