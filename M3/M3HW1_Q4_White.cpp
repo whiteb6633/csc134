@@ -15,7 +15,7 @@ int main () {
     number1 = (rand() % 50) + 1;
     number2 = (rand() % 25) + 1;
 
-    cout << "What is " << number1 << " plus " << number2 << endl; 
+    cout << "What is " << number1 << " plus " << number2 << "?" << endl; 
     cin >> answer;
     if (answer == number1 + number2) {
         cout << "Correct!" << endl;
