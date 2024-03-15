@@ -15,12 +15,21 @@ int main() {
     table = 1;
     product = num * table; 
 
-    cout << "What is the first number?" << endl;
-    cin >> num;
-    
+    cout << "Question 1" << endl;
+
     for (int i=1; i<= 12; i++) {
         product = num * i;
         cout << num << " times " << i << " equals " << product << endl; 
     }
+    cout << endl;
+    cout << "Question 2" << endl;
+    cout << "Enter a number between 1 and 12... ";
+    cin >> num;
+
+    for (int i=1; i<= 12; i++) {
+        product = num * i;
+        cout << num << " times " << i << " equals " << product << endl; 
+    }
+
     return 0;
 }
