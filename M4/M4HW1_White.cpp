@@ -26,6 +26,11 @@ int main() {
     cout << "Enter a number between 1 and 12... ";
     cin >> num;
 
+    while (num <= 0 || num > 12) {
+        cout << "Invalid response. Enter a number between 1 and 12... ";
+        cin >> num;
+    }
+    
     for (int i=1; i<= 12; i++) {
         product = num * i;
         cout << num << " times " << i << " equals " << product << endl; 
