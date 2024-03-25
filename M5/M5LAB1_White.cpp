@@ -65,8 +65,8 @@ void choice_vegetables() {
   if (1 == choice) {
     main_menu();
   } else if (2 == choice) {
+    cout << "To the store we go!" << endl;
     choice_to_store();
-    cout << "See you when you get back!...and grab some salt while you're at it!" << endl;
   }
 }
 
@@ -104,6 +104,7 @@ void choice_to_store() {
   cout << "What should we get out of here?" << endl;
   cout << "1. Frozen Pizza" << endl;
   cout << "2. TV dinners" << endl;
+  cout << "3. Broccoli" << endl;
   int choice;
   cout << "Choose: " << endl;
   cin >> choice;
@@ -111,5 +112,7 @@ void choice_to_store() {
     cout << "Can't go wrong with that!" << endl;
   } else if (2 == choice) {
     cout << "You're joking, right?" << endl;
+  } else if (3 == choice) {
+    cout << "Well it is what we came here for." << endl;
   }
 }
