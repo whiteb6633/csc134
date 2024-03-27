@@ -101,6 +101,7 @@ void choice_steak() {
 }
 
 void choice_to_store() {
+  cout << "(While in the store...)" << endl;
   cout << "What should we get out of here?" << endl;
   cout << "1. Frozen Pizza" << endl;
   cout << "2. TV dinners" << endl;
