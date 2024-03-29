@@ -4,6 +4,7 @@
 // 3/28/2024
 
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 void Q1();
@@ -34,8 +35,9 @@ int main () {
     } else if (5 == option) {
         Q5();
     } else if (6 == option) {
-        cout << "Ok, not a problem" << endl;
-    } else if (option =! 1,2,3,4,5,6) {
+        cout << "Ok, not a problem!" << endl;
+    } 
+    else {
         cout << "Invalid response" << endl;
         return main();
     }
@@ -44,7 +46,31 @@ int main () {
 }
 
 void Q1() {
-    cout << "Hello World" << endl;
+    
+    string month1, month2, month3;
+    double rainfall_1, rainfall_2, rainfall_3;
+    double average_rainfall;
+    double total;
+
+    cout << "Rainfall Calculations" << endl;
+    cout << "Enter month:" << endl;
+    cin >> month1;
+    cout << "Enter rainfall for " << month1 << ":" << endl;
+    cin >> rainfall_1;
+    cout << "Enter month:" << endl;
+    cin >> month2;
+    cout << "Enter rainfall for " << month2 << ":" << endl;
+    cin >> rainfall_2;
+    cout << "Enter month:" << endl; 
+    cin >> month3;
+    cout << "Enter rainfall for " << month3 << ":" << endl;
+    cin >> rainfall_3;
+
+    cout << fixed << setprecision(2);
+    average_rainfall = rainfall_1 + rainfall_2 + rainfall_3;
+    total = average_rainfall / 3;
+
+    cout << "The average rainfall for " << month1 << ", " << month2 << ", and " << month3 << " is " << total;
 }
 
 void Q2() {
