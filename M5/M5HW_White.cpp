@@ -180,8 +180,24 @@ double triangle() {
         cin >> height;
         area = base * height;
         cout << "Area: " << area;
+        return 0;
 }
 
 void Q5() {
-    cout << "Okay" << endl;
+    cout << "Distance Traveled" << endl;
+    int speed;
+    int time;
+    int distance;
+    cout << "What is the speed of the vehicle in MPH? ";
+    cin >> speed;
+    cout << "How many hours has it traveled? ";
+    cin >> time;
+    distance = speed * time;
+    cout << "Hour(s)" << "\t\t" << "Distance Traveled" << endl;
+    cout << "____________________________" << endl;
+    cout << time << "\t\t\t" << distance << endl;
+    distance++; 
 }
+    
+
+    
