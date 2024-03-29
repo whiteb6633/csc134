@@ -12,6 +12,9 @@ void Q2();
 void Q3();
 void Q4();
 void Q5();
+double circle();
+double rectangle();
+double triangle();
 
 int main () {
     cout << "Choose the corresponding number beside the question to proceed or 6 to quit:" << endl;
@@ -113,8 +116,60 @@ void Q3() {
 }
 
 void Q4() {
-    cout << "Ugh, you again" << endl;
+
+    double circle();
+    double rectangle();
+    double triangle();
+    int choice;
+
+    cout << "Geometry Calculator" << endl;
+    cout << "Please choose from the following options..." << endl;
+    cout << "1. Calculate the Area of a Circle:" << endl;
+    cout << "2. Calculate the Area of a Rectangle:" << endl;
+    cout << "3. Calculate the Area of a Triangle:" << endl;
+    cout << "4. Quit:" << endl;
+    cin >> choice;
+    if (1 == choice) {
+        circle();
+    } else if (2 == choice) {
+        rectangle();
+    } else if (3 == choice) {
+        triangle();
+    } else if (4 == choice) {
+        cout << "Ok, til next time." << endl;
+    } else if(choice =! 1,2,3,4) {
+        cout << "Invalid Response!" << endl;
+        return Q4();
+    }
 }
+
+double circle() {
+    double radius;
+    double pi = 3.14159;
+    double area;
+    double square;
+    cout << "What is the radius of the circle? ";
+    cin >> radius;
+    square = radius * radius;
+    area = pi * square;
+    cout << "Area: " << area;
+    }
+
+double rectangle() {
+        double length;
+        double width;
+        double area;
+        cout << "What is the length of the rectangle? ";
+        cin >> length;
+        cout << "What is the width of the rectangle? ";
+        cin >> width;
+        area = length * width;
+        cout << "Area: " << area;
+    }
+
+double triangle() {
+        cout << "HAHA";
+    }
 
 void Q5() {
     cout << "Okay" << endl;
