@@ -137,6 +137,7 @@ void Q4() {
         triangle();
     } else if (4 == choice) {
         cout << "Ok, til next time." << endl;
+        main();
     } else if(choice =! 1,2,3,4) {
         cout << "Invalid Response!" << endl;
         return Q4();
@@ -153,7 +154,8 @@ double circle() {
     square = radius * radius;
     area = pi * square;
     cout << "Area: " << area;
-    }
+    return 0;
+}
 
 double rectangle() {
         double length;
@@ -165,11 +167,20 @@ double rectangle() {
         cin >> width;
         area = length * width;
         cout << "Area: " << area;
-    }
+        return 0;
+}
 
 double triangle() {
-        cout << "HAHA";
-    }
+        double base;
+        double height;
+        double area;
+        cout << "What is the length of the base of the triangle? ";
+        cin >> base;
+        cout << "What is the height of the triangle? ";
+        cin >> height;
+        area = base * height;
+        cout << "Area: " << area;
+}
 
 void Q5() {
     cout << "Okay" << endl;
