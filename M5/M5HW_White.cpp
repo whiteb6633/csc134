@@ -95,21 +95,21 @@ void Q2() {
 void Q3() {
     cout << "The Roman Numerals." << endl;
     int number;
-    switch (number)
-    {
-        case 1: number = "I"; break;
-        case 2: number = "II"; break;
-        case 3: number = "III"; break;
-        case 4: number = "IV"; break;
-        case 5: number = "V"; break;
-        case 6: number = "VI"; break;
-        case 7: number = "VII"; break;
-        case 8: number = "VIII"; break;
-        case 9: number = "IX"; break;
-        case 10: number = "X"; break;
-    }
-    cout << "Please enter a number (1 - 10): ";
+    string numeral;
+    cout << "Please enter a number (1-10): ";
     cin >> number;
+    if (number == 1) {numeral = "I";}
+    else if (number == 2) {numeral = "II";}
+    else if (number == 3) {numeral = "III";}
+    else if (number == 4) {numeral = "IV";}
+    else if (number == 5) {numeral = "V";}
+    else if (number == 6) {numeral = "VI";}
+    else if (number == 7) {numeral = "VII";}
+    else if (number == 8) {numeral = "VIII";}
+    else if (number == 9) {numeral = "IX";}
+    else if (number == 10) {numeral = "X";}
+
+    cout << "The roman numeral for " << number << " is " << numeral;
 }
 
 void Q4() {
