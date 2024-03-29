@@ -46,24 +46,24 @@ int main () {
 }
 
 void Q1() {
-    
+
     string month1, month2, month3;
     double rainfall_1, rainfall_2, rainfall_3;
     double average_rainfall;
     double total;
 
     cout << "Rainfall Calculations" << endl;
-    cout << "Enter month:" << endl;
+    cout << "Enter month: ";
     cin >> month1;
-    cout << "Enter rainfall for " << month1 << ":" << endl;
+    cout << "Enter rainfall for " << month1 << ": ";
     cin >> rainfall_1;
-    cout << "Enter month:" << endl;
+    cout << "Enter month: ";
     cin >> month2;
-    cout << "Enter rainfall for " << month2 << ":" << endl;
+    cout << "Enter rainfall for " << month2 << ": ";
     cin >> rainfall_2;
-    cout << "Enter month:" << endl; 
+    cout << "Enter month: "; 
     cin >> month3;
-    cout << "Enter rainfall for " << month3 << ":" << endl;
+    cout << "Enter rainfall for " << month3 << ": ";
     cin >> rainfall_3;
 
     cout << fixed << setprecision(2);
@@ -74,11 +74,42 @@ void Q1() {
 }
 
 void Q2() {
-    cout << "Goodbye World" << endl;
+    cout << "The Hyperrectangle....block." << endl;
+
+    double length, width, height;
+    double volume;
+
+    cout << "Please enter the length: ";
+    cin >> length;
+    cout << "Please enter the width: ";
+    cin >> width;
+    cout << "Please enter the height: ";
+    cin >> height;
+
+    cout << fixed << setprecision(2);
+    volume = length * width * height;
+
+    cout << "The volume of the block is " << volume;    
 }
 
 void Q3() {
-    cout << "Hello again" << endl;
+    cout << "The Roman Numerals." << endl;
+    int number;
+    switch (number)
+    {
+        case 1: number = "I"; break;
+        case 2: number = "II"; break;
+        case 3: number = "III"; break;
+        case 4: number = "IV"; break;
+        case 5: number = "V"; break;
+        case 6: number = "VI"; break;
+        case 7: number = "VII"; break;
+        case 8: number = "VIII"; break;
+        case 9: number = "IX"; break;
+        case 10: number = "X"; break;
+    }
+    cout << "Please enter a number (1 - 10): ";
+    cin >> number;
 }
 
 void Q4() {
