@@ -196,7 +196,7 @@ void Q5() {
     cout << "Hour(s)" << "\t\t" << "Distance Traveled" << endl;
     cout << "____________________________" << endl;
     cout << time << "\t\t\t" << distance << endl;
-    distance++; 
+    time++; 
 }
     
 
