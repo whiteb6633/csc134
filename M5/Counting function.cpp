@@ -14,7 +14,7 @@ int count_char(string str, string c)
    int count = 0;
    for (int i = 0; i < str.length(); i++)
    {
-      if (str == c) { count++; }
+      if (str.substr(i, 1) == c) { count++; }
    }
    return count;
 }
