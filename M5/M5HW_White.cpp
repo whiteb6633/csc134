@@ -39,8 +39,7 @@ int main () {
         Q5();
     } else if (6 == option) {
         cout << "Ok, not a problem!" << endl;
-    } 
-    else {
+    } else {
         cout << "Invalid response" << endl;
         return main();
     }
@@ -81,7 +80,7 @@ void Q2() {
 
     double length, width, height;
     double volume;
-
+    
     cout << "Please enter the length: ";
     cin >> length;
     cout << "Please enter the width: ";
