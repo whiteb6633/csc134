@@ -91,6 +91,19 @@ void Q2() {
     cout << fixed << setprecision(2);
     volume = length * width * height;
 
+    if (length <= 0) {
+        cout << "Invalid response." << endl;
+        return Q2();
+    } 
+    if (width <= 0) {
+        cout << "Invalid response." << endl;
+        return Q2();
+    }
+    if (height <= 0) {
+        cout << "Invalid response." << endl;
+        return Q2();
+    }
+
     cout << "The volume of the block is " << volume;    
 }
 
@@ -110,7 +123,10 @@ void Q3() {
     else if (number == 8) {numeral = "VIII";}
     else if (number == 9) {numeral = "IX";}
     else if (number == 10) {numeral = "X";}
-
+    else if (number < 1 || number > 10) {
+        cout << "Invalid response." << endl;
+        return Q3();
+    }
     cout << "The roman numeral for " << number << " is " << numeral;
 }
 
