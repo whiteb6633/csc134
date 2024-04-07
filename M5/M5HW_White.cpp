@@ -154,7 +154,7 @@ void Q4() {
         cout << "Ok, til next time." << endl;
         main();
     } else if(choice =! 1,2,3,4) {
-        cout << "Invalid Response!" << endl;
+        cout << "Invalid Response! Please choose from the options indicated." << endl;
         return Q4();
     }
 }
@@ -168,7 +168,11 @@ double circle() {
     cin >> radius;
     square = radius * radius;
     area = pi * square;
-    cout << "Area: " << area;
+    if (radius < 0) {
+        cout << "Invalid response. Please choose a positive number." << endl;
+        return circle();
+    }
+    cout << "The circles area is: " << area;
     return 0;
 }
 
@@ -181,7 +185,15 @@ double rectangle() {
         cout << "What is the width of the rectangle? ";
         cin >> width;
         area = length * width;
-        cout << "Area: " << area;
+        if (length < 0) {
+            cout << "Invalid response. Please choose a positive number." << endl;
+            return rectangle();
+        }
+        if (width < 0) {
+            cout << "Invalid response. Please choose a positive number." << endl;
+            return rectangle();
+        }
+        cout << "The rectangles area is: " << area;
         return 0;
 }
 
@@ -194,7 +206,15 @@ double triangle() {
         cout << "What is the height of the triangle? ";
         cin >> height;
         area = base * height;
-        cout << "Area: " << area;
+        if (base < 0) {
+            cout << "Invalid response. Please choose a positive number." << endl;
+            return triangle();
+        }
+        if (height < 0) {
+            cout << "Invalid response. Please choose a positive number." << endl;
+            return triangle();
+        }
+        cout << "The triangles area is: " << area;
         return 0;
 }
 
