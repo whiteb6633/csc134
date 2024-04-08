@@ -233,7 +233,7 @@ void Q5() {
     
     cout << "Hour(s)" << "\t\t" << "Distance Traveled" << endl;
     cout << "____________________________" << endl;
-    while (time <= distance) {
+    while (time <= distance && time < 10)  {
     cout << time << "\t\t\t" << speed * time << endl;
     time++;
     }
