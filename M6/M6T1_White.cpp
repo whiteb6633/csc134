@@ -44,7 +44,7 @@ void P1() {
 
 void P2() {
     cout << "The Car Counter: Arrays." << endl;
-    int weekdays[5];
+    int weekdays;
     int cars;
     int total;
     int average; 
