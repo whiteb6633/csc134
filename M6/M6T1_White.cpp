@@ -1,10 +1,9 @@
 // CSC 134
 // M6T1 - Counting Cars
 // WhiteB
-// 4/8/2024
+// 4/15/2024
 
 #include <iostream>
-#include <cstdlib>
 using namespace std;
 
 void P1();
@@ -25,26 +24,38 @@ int main () {
     return 0;
 }
 
-    const int MAX_DAYS = 5;
-    const int CARS = (rand() % 50) + 1;
-    const int TOTAL = CARS * MAX_DAYS;
-    const int AVERAGE = CARS / MAX_DAYS;
-
 void P1() {
     cout << "The Car Counter:" << endl;
-    
-    int days[MAX_DAYS] = {1, 2, 3, 4, 5};
+    int weekdays = 5;
+    int cars;
+    int total;
+    int average; 
 
-    /*
-    cars need to be randomized
-    cars need to be averaged 
-    print total 
-    */
+    for (int i = 10; i <= 100; i++)
+    {
+        cars = i;
+        total = cars * weekdays;
+        average =  total / weekdays;
+    }
     
-    cout << "The average number of cars that's passed the site this week is " << TOTAL << endl;
-    cout << "The average number of cars that passed per day is " << AVERAGE << endl;
+        cout << "The total number of cars that's passed the site is " << total << endl;
+        cout << "The average number of cars that's passed the site per day is " << average << endl;
 }
 
 void P2() {
-    cout << "Goodbye" << endl;
+    cout << "The Car Counter: Arrays." << endl;
+    int weekdays[5];
+    int cars;
+    int total;
+    int average; 
+
+    for (int i = 10; i <= 100; i++)
+    {
+        cars = i;
+        total = cars * weekdays;
+        average =  total / weekdays;
+    }
+    
+        cout << "The total number of cars that's passed the site is " << total << endl;
+        cout << "The average number of cars that's passed the site per day is " << average << endl;
 }
