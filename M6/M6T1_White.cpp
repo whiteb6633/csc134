@@ -28,34 +28,44 @@ void P1() {
     cout << "The Car Counter:" << endl;
     int weekdays = 5;
     int cars;
-    int total;
+    int total = 0;
     int average; 
 
-    for (int i = 10; i <= 100; i++)
+    for (int i = 0; i < weekdays; i++)
     {
-        cars = i;
-        total = cars * weekdays;
-        average =  total / weekdays;
+        cout << "How many cars passed on day " << i + 1 << "?";
+        cin >> cars;
+        total = total + cars;
+        
     }
-    
-        cout << "The total number of cars that's passed the site is " << total << endl;
+        average =  total / weekdays;
+        cout << "The total number of cars that's passed the site this week (Monday - Friday) is " << total << endl;
         cout << "The average number of cars that's passed the site per day is " << average << endl;
 }
 
 void P2() {
     cout << "The Car Counter: Arrays." << endl;
-    int weekdays;
-    int cars;
-    int total;
+
+    const int WEEKDAYS = 5;
+    int cars[WEEKDAYS];
+    int total = 0;
     int average; 
 
-    for (int i = 10; i <= 100; i++)
+    for (int i = 0; i < WEEKDAYS; i++)
     {
-        cars = i;
-        total = cars * weekdays;
-        average =  total / weekdays;
+        cout << "How many cars passed on day " << i + 1 << "?";
+        cin >> cars[i];
+        total = total + cars[i];
+        
     }
-    
-        cout << "The total number of cars that's passed the site is " << total << endl;
+        average =  total / WEEKDAYS;
+        cout << "The total number of cars that's passed the site this week (Monday - Friday) is " << total << endl;
         cout << "The average number of cars that's passed the site per day is " << average << endl;
+        cout << "The car counts are... " << endl;
+        for (int i = 0; i < WEEKDAYS; i++)
+        {
+            cout << cars[i];
+            cout << ",";
+        }
+        cout << endl;
 }
