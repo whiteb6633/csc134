@@ -33,15 +33,28 @@ class Restaraunt {
     double getRating() const {
         return rating;
     }
+    // print a formatted entry
+    void printInfo() {
+        cout << "Name: " << name << " ";
+        cout << "(" << rating << "/5 stars)" << endl;
+    }
 
 };
 
 int main() {
-    cout << "MT71 - Restaraunt Reviews" << endl;
+    cout << "M7T1 - Restaraunt Reviews" << endl;
     // create a restaraunt
     Restaraunt lunch_place = Restaraunt("Mi Casita", 4.5);
-    cout << "Review info" << endl;
-    cout << lunch_place.getName() << endl;
-    cout << lunch_place.getRating() << endl;
+    // the constructor saves us from having to use 3 lines to set up
+    // Restaraunt lunch_place;
+    // lunch_place.setName("Place");
+    // lunch_place.setRating( 3.0);
+    Restaraunt breakfast_place = Restaraunt("Waffle House", 3.0);
+    cout << "Review info:" << endl;
+    cout << "Breakfast:" << endl;
+    breakfast_place.printInfo();
+    cout << "Lunch:" << endl;
+    lunch_place.printInfo();
+
     return 0;
 }
