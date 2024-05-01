@@ -70,12 +70,15 @@ int main()
     cout << "This program will calculate the area of a\n";
     cout << "rectangle. What is the width? ";
     cin >> rectWidth;
+
     /*if (rectWidth < 1) {
         cout << "Invalid response. No sides can be 0 or negative" << endl;
         return main();
     }*/
+    
     cout << "What is the length? ";
     cin >> rectLength;
+
     /*if (rectLength < 1) {
         cout << "Invalid response. No sides can be 0 or negative" << endl;
         return main();
